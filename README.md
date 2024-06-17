@@ -9,6 +9,4 @@ Ini adalah proyek kalkulator konversi suhu dari Celsius ke Fahrenheit dan sebali
 3. Klik tombol "Reset" untuk menghapus input.
 4. Klik tombol "Reverse" untuk mengubah mode konversi.
 
-### Tampilan
 
-Halaman ini responsif dan akan beradaptasi dengan berbagai ukuran layar.
