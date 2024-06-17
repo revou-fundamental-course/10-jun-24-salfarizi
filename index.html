@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kalkulator Konversi Suhu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    sadadssadsa
+    <div class="container">
+        <div class="card">
+            <h1><i class='bx bx-calculator'></i> Kalkulator Konversi Suhu</h1>
+            <p>Masukkan suhu pada form dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi.</p>
+
+            <div class="calculator">
+                <label for="inputTemp" id="inputLabel">Celsius (°C):</label>
+                <input type="number" id="inputTemp" name="inputTemp">
+
+                <label for="outputTemp" id="outputLabel">Fahrenheit (°F):</label>
+                <input type="number" id="outputTemp" name="outputTemp" readonly>
+
+                <div class="button-container">
+                    <button class="button-konversi" onclick="convert()">Konversi</button>
+                    <button class="button-reset" onclick="resetForm()">Reset</button>
+                    <button class="button-reverse" onclick="reverseConversion()">Reverse</button>
+                </div>
+
+                <div class="calculation">
+                    <h3>Cara Kalkulasi:</h3>
+                    <p id="calculation-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
